@@ -15,6 +15,7 @@ Usage:
 + Install Kali Linux on Raspberry Pi
 + Run 'raspoc.sh' installer script
 + Copy 'raspoc' folder to '~/'
-+ Run 'scan.sh'
++ Enter desired frequency in scan.sh (if you are unsure about 'PPM' just enter '1')
++ Run scan.sh
 
 Happy decoding.
