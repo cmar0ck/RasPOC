@@ -2,7 +2,7 @@
 
 Features: 
 
-Automated scanning and decoding in the background, needs very little user input, filterable results.
+Automated scanning and decoding in the background, needs very little to no user input once set up properly, filterable results.
 
 Requirements:
 
