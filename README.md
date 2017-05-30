@@ -15,5 +15,6 @@ Usage:
 + Install Kali Linux on Raspberry Pi
 + Run 'raspoc.sh' installer script
 + Copy 'raspoc' folder to '~/'
++ Run 'scan.sh'
 
 Happy decoding.
