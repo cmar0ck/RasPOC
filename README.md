@@ -8,7 +8,7 @@ Requirements:
 
 + Raspberry Pi
 + Kali Linux
-+ RTL SDR device
++ RTL SDR device (works with most cheapo DVB-T USB sticks!)
 
 Usage: 
 
