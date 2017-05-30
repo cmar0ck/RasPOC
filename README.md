@@ -7,8 +7,8 @@ Automated scanning and decoding in the background, needs very little user input,
 Requirements:
 
 + Raspberry Pi
-+ Kali Linux
-+ RTL SDR device (works with most cheapo DVB-T USB sticks!)
++ [Kali Linux](https://www.offensive-security.com/kali-linux-arm-images/)
++ RTL SDR device (works with most [cheapo DVB-T USB sticks](http://www.ebay.com/sch/i.html?_from=R40&_sacat=0&LH_BIN=1&_nkw=rtl2832u&_sop=15)!)
 
 Usage: 
 
