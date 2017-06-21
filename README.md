@@ -2,7 +2,9 @@
 
 Features: 
 
-Automated scanning and decoding in the background, needs very little to no user input once set up properly, filterable results.
+Automated scanning and decoding in the background, needs very little to no user input once set up properly, filterable results, file-based logging (so no need for setting up a database).
+
+(It can also be used to decode FLEX, EAS, UFSK1200, CLIPFSK, AFSK1200, AFSK2400, AFSK2400_2, AFSK2400_3, HAPN4800, FSK9600, DTMF, ZVEI1, ZVEI2, ZVEI3, DZVEI, PZVEI, EEA, EIA, CCIR and MORSE CW)
 
 Requirements:
 
