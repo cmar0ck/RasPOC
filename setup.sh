@@ -35,6 +35,14 @@ case "$choice" in
 esac
 echo
 
+read -p "Move RasPOC folder into home dir? Continue (y/n)?" choice
+case "$choice" in 
+  y|Y ) mv raspoc ~;;
+  n|N ) echo "canceling...";;
+  * ) 	echo "invalid input";;
+esac
+echo
+
 read -p "Configure RasPOC specific cronjobs? Continue (y/n)?" choice
 case "$choice" in 
   y|Y ) read -p "Paste the following lines into crontab file (change script locations if needed):" key;
