@@ -1,5 +1,5 @@
 # This script needs to be run on
-# KALI LINUX (Url: https://www.offensive-security.com/kali-linux-arm-images/ )
+# KALI linux (URL: https://www.kali.org/get-kali/#kali-arm )
 
 echo
 echo "###############################"
@@ -7,7 +7,7 @@ echo "#      BASIC PREPARATIONS     #"
 echo "###############################"
 echo
 
-read -p "Change root password? Continue (y/n)?" choice
+read -p "Change default password? Continue (y/n)?" choice
 case "$choice" in 
   y|Y ) passwd;;
   n|N ) echo "canceling...";;
@@ -57,7 +57,7 @@ case "$choice" in
 	echo "0 0 * * 1 sh ~/raspoc/reboot.sh"
 	echo	
 	read -p "Press any key to continue" key;
-	crontab -e
+	sudo crontab -e
 	echo "DONE (Don't forget to reboot for the changes to take effect.)";
 	echo;;
   n|N ) echo "canceling...";;
@@ -67,7 +67,7 @@ echo
 
 read -p "Update system? Continue (y/n)?" choice
 case "$choice" in 
-  y|Y ) apt update && apt dist-upgrade -y && apt autoremove -y;;
+  y|Y ) sudo apt update && sudo apt dist-upgrade -y && sudo apt autoremove -y;;
   n|N ) echo "canceling...";;
   * ) 	echo "invalid input";;
 esac
@@ -79,24 +79,8 @@ echo "#   INSTALL COMMON SOFTWARE   #"
 echo "###############################"
 echo
 
-echo "Installing TightVNC Server"
-apt install -y tightvncserver
-echo
-
 echo "Installing kali 'SDR' metapackage"
-apt install -y kali-linux-sdr
-echo
-
-echo "Installing kali 'WIRELESS' metapackage" 
-apt install -y kali-linux-wireless
-echo
-
-echo "Installing kali 'TOP 10' metapackage" 
-apt install -y kali-linux-top10
-echo
-
-echo "Installing multimon-ng"
-apt install -y multimon-ng
+sudo apt install -y kali-tools-sdr 
 echo
 
 echo "DONE!"
