@@ -18,8 +18,8 @@ echo
 read -p "Change hostname? Continue (y/n)?" choice
 case "$choice" in 
   y|Y ) read -p "Replace 'kali' with the desired hostname in the following 2 files" key;
-	nano /etc/hostname;
-	nano /etc/hosts;
+	sudo nano /etc/hostname;
+	sudo nano /etc/hosts;
 	echo "DONE (Don't forget to reboot for the changes to take effect.)";
 	echo;;
   n|N ) echo "canceling...";;
@@ -29,7 +29,7 @@ echo
 
 read -p "Set default timezone? Continue (y/n)?" choice
 case "$choice" in 
-  y|Y ) dpkg-reconfigure tzdata;;
+  y|Y ) sudo dpkg-reconfigure tzdata;;
   n|N ) echo "canceling...";;
   * ) 	echo "invalid input";;
 esac
